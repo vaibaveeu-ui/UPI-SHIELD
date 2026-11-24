@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UPI Shield | Stay Safe from Payment Scams</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">🛡️ UPI SHIELD</div>
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#checker">Fraud Checker</a>
+      <a href="#scenarios">Learn</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <h1>Stay Safe from UPI Scams</h1>
+      <p>Learn how to spot suspicious payment requests and protect your money.</p>
+      <button type="button" onclick="scrollToChecker()">Check a Situation</button>
+    </section>
+
+    <section class="checker" id="checker">
+      <h2>UPI Fraud Checker</h2>
+      <p>Describe a message or payment situation to check for common warning signs.</p>
+      <textarea id="userInput" placeholder="Describe the situation here..."></textarea>
+      <div>
+        <button type="button" onclick="checkFraud()">Check Now</button>
+        <button type="button" onclick="clearChecker()">Clear</button>
+      </div>
+      <div id="result" aria-live="polite"></div>
+    </section>
+
+    <section class="scenarios" id="scenarios">
+      <h2>Common UPI Scam Scenarios</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Fake Payment Screenshot</h3>
+          <p>A screenshot can be edited. Check your bank or UPI app for the actual transaction.</p>
+          <button type="button" onclick="showTip(1)">Safety Tip</button>
+        </article>
+        <article class="card">
+          <h3>QR Code Scam</h3>
+          <p>Be cautious of QR codes that ask you to enter your PIN to receive money.</p>
+          <button type="button" onclick="showTip(2)">Safety Tip</button>
+        </article>
+        <article class="card">
+          <h3>Fake Customer Care</h3>
+          <p>Scammers may pose as support staff and ask for sensitive information.</p>
+          <button type="button" onclick="showTip(3)">Safety Tip</button>
+        </article>
+        <article class="card">
+          <h3>Unexpected Collect Request</h3>
+          <p>A collect request asks you to approve a payment from your account.</p>
+          <button type="button" onclick="showTip(4)">Safety Tip</button>
+        </article>
+        <article class="card">
+          <h3>OTP Scam</h3>
+          <p>Never share an OTP or UPI PIN, even with someone claiming to help you.</p>
+          <button type="button" onclick="showTip(5)">Safety Tip</button>
+        </article>
+      </div>
+      <div id="tipBox" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>UPI Shield is an awareness project. Always verify transactions in your official payment app.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

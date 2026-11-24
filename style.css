@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f1f5f9;
+  color: #172554;
+}
+
+header {
+  background: #102a56;
+  color: white;
+  padding: 20px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 23px;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.hero {
+  background: linear-gradient(135deg, #102a56, #087e8b);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+button {
+  background: #fbbf24;
+  color: #102a56;
+  border: none;
+  padding: 13px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+button:hover {
+  background: #f59e0b;
+}
+
+.checker, .scenarios {
+  padding: 60px 8%;
+  text-align: center;
+}
+
+.checker textarea {
+  width: 100%;
+  max-width: 650px;
+  height: 120px;
+  padding: 15px;
+  margin-top: 20px;
+  border: 2px solid #cbd5e1;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px #00000015;
+}
+
+.card h3 {
+  margin-bottom: 12px;
+  color: #087e8b;
+}
+
+#result, #tipBox {
+  max-width: 650px;
+  margin: 25px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background: white;
+  text-align: left;
+  line-height: 1.7;
+}
+
+footer {
+  background: #102a56;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  line-height: 2;
+}
+
+@media(max-width: 600px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+}
